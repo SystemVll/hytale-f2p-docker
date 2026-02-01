@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> This server is designed to work with the **Hytale Free to Play** Launcher only.</br>
+> Download: [https://hytalef2p.com](https://hytalef2p.com/)
+
 # Hytale F2P Server
 
 A dockerized Hytale F2P server that automatically handles authentication and server registration with the Hytale auth server.
