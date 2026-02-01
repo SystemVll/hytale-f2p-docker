@@ -7,7 +7,7 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ./game:/server/game
+      - ./game:/game
     ports:
       - "5520:5520/udp"
     environment:
@@ -15,4 +15,4 @@ services:
       SERVER_NAME: "My Hytale Server"
       BIND_ADDRESS: "0.0.0.0:5520"
       AUTH_MODE: "authenticated"
-    working_dir: /server
+    working_dir: /game
