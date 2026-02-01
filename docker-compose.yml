@@ -1,9 +1,9 @@
 services:
-  hytale-f2p:
+  hytale:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: hytale_f2p_server
+    container_name: Hytale
     stdin_open: true
     tty: true
     volumes:
