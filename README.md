@@ -9,11 +9,10 @@ A dockerized Hytale F2P server that automatically handles authentication and ser
 
 ## Quick Start
 
-1. Place your `HytaleServer.jar` and `Assets.zip` files in the `game/` directory
-2. Run the server:
+1. Run the server:
 
 ```bash
-docker-compose up --build
+docker-compose up
 ```
 
 The server will:
