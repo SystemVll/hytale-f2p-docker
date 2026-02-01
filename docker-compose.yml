@@ -1,0 +1,18 @@
+services:
+  hytale-f2p:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hytale_f2p_server
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./game:/server/game
+    ports:
+      - "5520:5520/udp"
+    environment:
+      HYTALE_AUTH_DOMAIN: auth.sanasol.ws
+      SERVER_NAME: "My Hytale Server"
+      BIND_ADDRESS: "0.0.0.0:5520"
+      AUTH_MODE: "authenticated"
+    working_dir: /server
